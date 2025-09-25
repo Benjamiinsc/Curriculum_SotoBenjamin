@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi horario de clases</title>
+    <style>
+        body {
+            background-image: url(Fondo.gif);
+            background-size: cover;
+            text-align: center;
+        }
+
+        .title {
+            color: rgb(174, 245, 236);
+            font-family: "papyrus";
+            font-size: 35px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+            display: inline-block;
+            border: 2px solid rgb(237, 176, 231);
+            font-family: "papyrus";
+            font-size: 18px;
+            color: rgb(133, 147, 237);
+        }
+
+        p {
+            display: inline-block;
+            list-style-type: square;
+            border: 2px solid rgb(237, 176, 231);
+            font-family: "papyrus";
+            font-size: 15px;
+            color: rgb(133, 147, 237);
+        }
+
+        nav ul a {
+            font-family: "papyrus";
+            font-size: 20px;
+            color: rgb(133, 147, 237);
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer p {
+            color: rgb(0, 255, 13);
+            font-family: "papyrus";
+            font-size: 30px;
+        }
+
+        table {
+            text-align: center;
+            background-color: rgb(211, 175, 226);
+            margin: 20px auto;
+            border-style: dotted;
+            border-color: rgb(138, 231, 236);
+            font-family: "papyrus";
+            font-size: 18px;
+            color: rgb(76, 76, 81);
+        }
+
+        th,
+        td {
+            border: 2px dotted rgb(138, 231, 236);
+            text-align: center;
+            width: auto;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Mi horario de clases</h1>
+        <h1 class="title">Mi horario de clases</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -18,8 +82,8 @@
     </header>
     <main>
         <section>
-            <h2>Mi horario</h2>
-            <table border="3">
+            <h2 class="title">Mi horario</h2>
+            <table>
                 <thead>
                     <tr>
                         <th>Hora</th>

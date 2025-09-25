@@ -3,11 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>curriculum (Benjamin Soto Coronado 253183)</title>
+    <style>
+        body {
+            background-image: url(Fondo.gif);
+            background-size: cover;
+            text-align: center;
+        }
+
+        .title {
+            color: rgb(174, 245, 236);
+            font-family: "papyrus";
+            font-size: 35px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+            display: inline-block;
+            border: 2px solid rgb(237, 176, 231);
+            font-family: "papyrus";
+            font-size: 18px;
+            color: rgb(133, 147, 237);
+        }
+
+        p {
+            display: inline-block;
+            list-style-type: square;
+            border: 2px solid rgb(237, 176, 231);
+            font-family: "papyrus";
+            font-size: 15px;
+            color: rgb(133, 147, 237);
+        }
+
+        nav ul a {
+            font-family: "papyrus";
+            font-size: 20px;
+            color: rgb(133, 147, 237);
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer p {
+            color: rgb(0, 255, 13);
+            font-family: "papyrus";
+            font-size: 30px;
+        }
+
+        .fotoRepetida {
+            display: block;
+            width: 100%;
+            height: 400px;
+            background-image: url("Mi foto.jpg");
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: auto 100%;
+        }
+        a{
+            color: rgb(141, 210, 237);
+            font-family: "papyrus";
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Mi curriculum vitae</h1>
+        <h1 class="title">Mi curriculum vitae</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -15,25 +76,26 @@
                 <li><a href="schedule.html">Horario</a></li>
             </ul>
         </nav>
-        <img src="Mi foto.jpg" alt="una foto para que me conozcan" height="200">
-        <h3>Benjamin Soto Coronado 253183</h3>
+        <img class="fotoRepetida">
+        <h3 class="title">Benjamin Soto Coronado 253183</h3>
         <a href="https://github.com/Benjamiinsc" target="_blank">Mi perfil de gitHub</a>
+        <br>
         <p>Mi correo electronico: benjamin.soto253183@potros.itson.edu.mx</p>
     </header>
     <main>
         <section>
-            <h2>Mi biografia</h2>
+            <h2 class="title">Mi biografia</h2>
             <p>Me llamo Benjamin Soto Coronado, tengo 19 años y actualmente estudio la carrera de Ingeniería en Software
                 en el ITSON, en quinto semestre.</p>
         </section>
 
         <section>
-            <h2>Mi experiencia laboral</h2>
+            <h2 class="title">Mi experiencia laboral</h2>
             <p>Por el momento no tengo experiencia laboral pero estoy interesado en ejercer mi carrea lo antes posible
             </p>
         </section>
         <section>
-            <h2>Mi educacion</h2>
+            <h2 class="title">Mi educacion</h2>
             <ul>
                 <li>Actualmente curso el quinto semestre de la carrera de ingenieria en software en el instituto
                     tecnologico de sonora (ITSON)</li>
@@ -42,7 +104,7 @@
             </ul>
         </section>
         <section>
-            <h2>Los idiomas que domino</h2>
+            <h2 class="title">Los idiomas que domino</h2>
             <ul>
                 <li>Español al 100%</li>
                 <li>Inglés al 75%</li>
