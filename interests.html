@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8">
     <title>Mis intereses</title>
     <style>
+        :root {
+            --color-titulo: rgb(174, 245, 236);
+            --color-texto: rgb(133, 147, 237);
+            --color-borde: rgb(237, 176, 231);
+            --color-pie: rgb(0, 255, 13);
+        }
+
         body {
             background-image: url(Fondo.gif);
             background-size: cover;
@@ -11,7 +19,7 @@
         }
 
         .title {
-            color: rgb(174, 245, 236);
+            color: var(--color-titulo);
             font-family: "papyrus";
             font-size: 35px;
         }
@@ -19,33 +27,53 @@
         ul {
             list-style-type: none;
             text-align: left;
-            display: inline-block;
-            border: 2px solid rgb(237, 176, 231);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid var(--color-borde);
             font-family: "papyrus";
             font-size: 18px;
-            color: rgb(133, 147, 237);
+            color: var(--color-texto);
+            padding: 10px;
         }
 
         p {
             display: inline-block;
-            list-style-type: square;
-            border: 2px solid rgb(237, 176, 231);
+            border: 2px solid var(--color-borde);
             font-family: "papyrus";
             font-size: 15px;
-            color: rgb(133, 147, 237);
+            color: var(--color-texto);
+        }
+
+        li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         nav ul a {
             font-family: "papyrus";
             font-size: 20px;
-            color: rgb(133, 147, 237);
+            color: var(--color-texto);
             list-style-type: none;
             padding: 0;
+            text-decoration: none;
         }
-        footer p{
-            color: rgb(0, 255, 13);
+
+        nav ul a:hover {
+            color: var(--color-borde);
+        }
+
+        footer p {
+            color: var(--color-pie);
             font-family: "papyrus";
             font-size: 30px;
+        }
+
+        .contenido-intereses {
+            max-height: 400px;
+            overflow: auto;
+            border: 2px solid var(--color-borde);
+            margin: 20px auto;
+            padding: 10px;
         }
     </style>
 </head>
@@ -62,7 +90,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="contenido-intereses">
             <h2 class="title">Mis intereses profesionales</h2>
             <ul>
                 <li>Aprender MVC para mi proyecto de Arquitectura de software</li>
@@ -71,7 +99,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="contenido-intereses">
             <h2 class="title">Mis intereses personales</h2>
             <ul>
                 <li>Jugar videojuegos</li>
